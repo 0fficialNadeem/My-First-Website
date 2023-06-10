@@ -4,12 +4,7 @@ window.onload = function () {
     const date = new Date().toJSON().slice(0, 10);
     let pickedDate = document.getElementById("date");
     pickedDate.setAttribute("min",date);
-
-
-
-
 }
-
 
 function popUp() {
     let names = document.getElementById("name");
@@ -45,20 +40,7 @@ function confirmation() {
 
 
 
-    //     if(email.value !== conf.value){
-    //         conf.setCustomValidity("email does not match!");
-    //     }else if(pickedDate.value<= date){
-    //         alert("Requires an appropriate date of at least 1 day prior to today") 
 
-
-    //     }
-    //     else{
-    //         popUp();
-    //         conf.setCustomValidity("");
-
-
-    // }
-    // conf.reportValidity();
     let radiobtn = document.getElementsByName("Preference");
     let finalradiobtnVal;
 
@@ -155,9 +137,8 @@ function confirmation() {
         phone.setCustomValidity("");
         radiobtn.setCustomValidity("");
 
-
-
     }
+    
     names.reportValidity();
     conf.reportValidity();
     pickedDate.reportValidity();
